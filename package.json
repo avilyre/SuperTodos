@@ -2,6 +2,11 @@
   "name": "supertodo",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Avily Silva",
+    "email": "avily.slv@gmail.com",
+    "url": "https://github.com/avilyslv/supertodo"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,8 +15,10 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "typescript": "~3.7.2"
   },

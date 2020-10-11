@@ -1,0 +1,55 @@
+.form-create {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+@media (max-width: 700px) {
+    .form-create {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-create {
+        max-width: 300px;
+    }
+}
+
+.form-create input {
+    font-size: 10pt;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--whiteColor);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.form-create button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    color: var(--mutedColor);
+    background: var(--greenColor);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.form-create button:hover {
+    background: var(--greenDarkColor);
+}
+
+.form-create button:active {
+    transform: scale(0.9);
+}
+
+@media (min-width: 700px) {
+    .form-create input {
+        font-size: 12pt;
+    }
+}

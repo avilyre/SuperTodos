@@ -1,0 +1,31 @@
+.todo-list .todo-item {
+    margin: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--whiteColor);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.todo-list .todo-item-out {
+    transition: .3s;
+    opacity: 0;
+    transform: translateX(60px);
+}
+
+.todo-list .todo-item .todo-item-title {
+    font-size: 10pt;
+    margin-left: 15px;
+}
+
+@media (min-width: 700px) {
+    .todo-list .todo-item .todo-item-title {
+        font-size: 12pt;
+        margin-left: 15px;
+    }
+}
+
+.todo-list a {
+    text-decoration: none;
+    color: var(--redColor);
+}

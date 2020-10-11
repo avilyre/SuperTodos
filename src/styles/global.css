@@ -1,0 +1,26 @@
+:root {
+    --blackColor: #4F4F4F;
+    --whiteColor: #FFFFFF;
+    --mutedColor: #E5E5E5;
+    --blueColor: #2F80ED;
+    --greenColor: #219653;
+    --greenDarkColor: #197943;
+    --redColor: #DB1B1B;
+}
+
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input {
+    font-family: Roboto;
+}
+
+body {
+    font-family: Roboto;
+    background: var(--mutedColor);
+}

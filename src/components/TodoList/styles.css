@@ -1,0 +1,12 @@
+.todo-list {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+@media (max-width: 700px) {
+    .todo-list {
+        max-width: 400px;
+    }
+}
