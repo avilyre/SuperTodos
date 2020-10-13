@@ -15,6 +15,10 @@ SuperTodos é uma aplicação simples e leve para que você possa organizar suas
 - *:fire: ReactJS*
 - *:fire: TypeScript*
 
+## Os Dados
+
+Todos os seus Todos serão **Salvos localmente** no seu **Computador, Celular** ou qualquer outro dispositivo que venha usar para acessar a aplicação
+
 ## A Aplicação
 
 ![](https://github.com/AvilySlv/avilyslv/blob/master/projects-images/supertodo/thumb.jpg)
