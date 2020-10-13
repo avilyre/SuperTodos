@@ -17,7 +17,7 @@ SuperTodos é uma aplicação simples e leve para que você possa organizar suas
 
 ## Os Dados
 
-Todos os seus Todos serão **Salvos localmente** no seu **Computador, Celular** ou qualquer outro dispositivo que venha usar para acessar a aplicação
+Todos os seus Todos serão **Salvos localmente** no seu **Computador, Celular** ou qualquer outro dispositivo que venha usar para acessar a aplicação, basta você fazer qualquer interação com o App seja criar, apagar ou marcar/desmarcar, que tudo será salvo :)
 
 ## A Aplicação
 
