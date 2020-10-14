@@ -12,7 +12,7 @@ SuperTodos é uma aplicação simples e leve para que você possa organizar suas
 
 ## Tecnologias
 
-- *:fire: ReactJS*
+- *:fire: ReactJS + ContextAPI*
 - *:fire: TypeScript*
 
 ## Os Dados
