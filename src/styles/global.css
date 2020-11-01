@@ -18,6 +18,23 @@
 button,
 input {
     font-family: Roboto;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--mutedColor);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-button {
+    background: var(--greenColor);
+}
+
+.transp-button {
+    background: rgba(0, 0, 0, 0);
 }
 
 body {

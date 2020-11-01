@@ -7,7 +7,6 @@ export const get = (): Todo[] => {
 
     try {
         const result = JSON.parse(data) as Todo[];
-        console.log('get Full');
         return result;
     } catch (err) {
         console.log(err);
@@ -17,6 +16,5 @@ export const get = (): Todo[] => {
 
 export const save = (data: Todo[]): any => {
     localStorage.setItem(TODO_STORE, JSON.stringify(data));
-    console.log('saved');
     return;
 }

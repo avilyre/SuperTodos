@@ -1,8 +1,5 @@
 .header {
-    opacity: 0;
-    transform: translateY(-10px);
     background: var(--blueColor);
-    transition: .3s;
 }
 
 .header .navbar {
@@ -10,11 +7,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 25px;
-}
-
-.header-animate {
-    opacity: 1;
-    transform: translateY(0px);
 }
 
 @media (min-width: 700px) {

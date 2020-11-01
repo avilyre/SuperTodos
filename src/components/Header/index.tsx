@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+
+import { motion } from 'framer-motion';
 
 import HeaderType from './../../interfaces/HeaderType';
 
@@ -10,15 +12,18 @@ import plusIcon from './../../assets/icons/plus.svg';
 import './styles.css';
 
 const Header = (props: HeaderType) => {
-
-    const [loaded, setLoaded] = useState(false);
-
-    useEffect(() => {
-        setLoaded(true);
-    });
-
     return (
-        <header className={loaded ? 'header header-animate' : 'header'}>
+        <motion.header
+            className="header"
+            initial={{
+                opacity: 0,
+                translateY: -20
+            }}
+            animate={{
+                opacity: 1,
+                translateY: 0
+            }}
+        >
             <nav className="navbar">
                 <div className="left">
                     <h2>Super Todos</h2>
@@ -40,7 +45,7 @@ const Header = (props: HeaderType) => {
                 <h1>{props.title}</h1>
                 <p>{props.description}</p>
             </div>
-        </header>
+        </motion.header>
     )
 }
 

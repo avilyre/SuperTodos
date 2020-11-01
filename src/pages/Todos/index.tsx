@@ -13,6 +13,7 @@ const Todos = () => {
 
     useEffect(() => {
         toggleDelete(false);
+        return;
     }, []);
 
     return (

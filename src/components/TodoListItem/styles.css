@@ -7,6 +7,30 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
 }
 
+
+.todo-list .todo-item .config-icon {
+    width: 20px;
+}
+
+.todo-list .todo-item form {
+    display: flex;
+    justify-content: space-between;
+}
+.todo-list .todo-item div.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-list .todo-item .todo-item-left {
+    display: flex;
+    align-items: center;
+}
+
+.todo-list .todo-item .todo-item-right {
+    display: flex;
+    align-items: center;
+}
+
 .todo-list .todo-item-out {
     transition: .3s;
     opacity: 0;
