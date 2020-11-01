@@ -8,7 +8,6 @@ export const TodosContext = createContext<TodoContextType>({
     deleteEnabled: false,
     toggleDelete: () => {},
     addTodo: () => {},
-    updateTodo: () => {},
     removeTodo: () => {},
     toggleTodo: () => {}
 });
@@ -18,18 +17,8 @@ const TodoContextProvider = (props: any) => {
     const [todos, setTodos] = useState<Todo[]>(get);
 
     useEffect(() => {
-
-        if(todos.length === 0) {
-            setTodos([
-                {
-                    id: 0,
-                    title: 'Sua primeira tarefa é criar uma :D',
-                    done: false
-                }
-            ]);
-        }
-
         save(todos);
+        console.log("Changed");
     }, [todos]);
 
     const [deleteEnabled, setDeleteEnabled] = useState(false);
@@ -44,15 +33,11 @@ const TodoContextProvider = (props: any) => {
         setTodos([...todos, todo]);
         return;
     }
-    const updateTodo = (todo: Todo) => {
-        const indexTodo = todos.findIndex(todoItem => todoItem.id === todo.id);
-        todos[indexTodo].title = todo.title;
-        setTodos([...todos]);
-    }
 
     const removeTodo = (todo: Todo) => {
         const index = todos.indexOf(todo);
         setTodos(todos.filter((i, item) => item !== index));
+        console.log(todos);
     }
 
     const toggleTodo = (todo: Todo) => {
@@ -63,15 +48,7 @@ const TodoContextProvider = (props: any) => {
 
 
     return (
-        <TodosContext.Provider value={{
-            todos, 
-            toggleDelete, 
-            deleteEnabled, 
-            addTodo, 
-            updateTodo,
-            removeTodo, 
-            toggleTodo 
-        }}>
+        <TodosContext.Provider value={{ todos, toggleDelete, deleteEnabled, addTodo, removeTodo, toggleTodo }}>
             {props.children}
         </TodosContext.Provider>
     )

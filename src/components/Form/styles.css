@@ -29,6 +29,10 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
 }
 
+.theme-dark .form-create input {
+    background: var(--dark-color-03);
+}
+
 .form-create button {
     width: 100%;
     padding: 15px;
@@ -38,6 +42,8 @@
     background: var(--greenColor);
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
     transition: .3s;
+
+    cursor: pointer;
 }
 
 .form-create button:hover {
@@ -46,6 +52,10 @@
 
 .form-create button:active {
     transform: scale(0.9);
+}
+
+.theme-dark .form-create button {
+    background-color: var(--dark-color-02);
 }
 
 @media (min-width: 700px) {
