@@ -1,27 +1,19 @@
-import React from 'react';
-
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
 import './styles.css'
 
 const ContentArea = (props: any) => {
+
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        setLoaded(true);
+    }, []);
+
     return (
-        <motion.section
-            className="main-content"
-            initial={{
-                opacity: 0,
-                translateY: 25
-            }}
-            animate={{
-                opacity:  1,
-                translateY: 0,
-                transition: {
-                    delay: 0.3
-                }
-            }}
-        >
+        <div className={!loaded ? 'main-content' : 'main-content-animate'}>
             {props.children}
-        </motion.section>
+        </div>
     )
 }
 

@@ -1,3 +1,13 @@
 .main-content {
     margin-top: -45px;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: .3s;
+}
+
+.main-content-animate {
+    margin-top: -45px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .5s;
 }

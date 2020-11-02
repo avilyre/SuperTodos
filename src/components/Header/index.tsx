@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import { motion } from 'framer-motion';
 
 import HeaderType from './../../interfaces/HeaderType';
 
@@ -9,26 +7,31 @@ import listIcon from './../../assets/icons/list.svg';
 import trashIcon from './../../assets/icons/trash.svg';
 import plusIcon from './../../assets/icons/plus.svg';
 
+import { useTheme } from '../../contexts/ThemeContext'
+
 import './styles.css';
 
 const Header = (props: HeaderType) => {
+    const { mode, toggleMode } = useTheme()
+
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        setLoaded(true);
+    }, []);
+
     return (
-        <motion.header
-            className="header"
-            initial={{
-                opacity: 0,
-                translateY: -20
-            }}
-            animate={{
-                opacity: 1,
-                translateY: 0
-            }}
-        >
+        <header className={loaded ? 'header header-animate' : 'header'}>
             <nav className="navbar">
                 <div className="left">
                     <h2>Super Todos</h2>
                 </div>
                 <div className="right">
+                    <label className="switch">
+                        <input type="checkbox" checked={mode === 'dark'} onChange={(e) => toggleMode()} />
+                        <span className="slider round"></span>
+                    </label>
+
                     <Link to="/" className="navbar-option-item" href="/">
                         <img src={listIcon} alt="Ver Todos"/>
                     </Link>
@@ -45,7 +48,7 @@ const Header = (props: HeaderType) => {
                 <h1>{props.title}</h1>
                 <p>{props.description}</p>
             </div>
-        </motion.header>
+        </header>
     )
 }
 
