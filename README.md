@@ -10,6 +10,7 @@ SuperTodos é uma aplicação simples e leve para que você possa organizar suas
 - *:pencil: Editar*
 - *:bomb: Remover*
 - *:chart_with_upwards_trend: Marcar/Desmarcar como concluída*
+- *:moon: Modo Escuro*
 
 ## Tecnologias
 
